@@ -225,4 +225,44 @@ Public Class Form1
         Quantities += 1
         QuantityValue.Text = Quantities
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles ClearBtn.Click
+        พลูฉลุ.Checked = False
+        เศรษฐีนำโชค.Checked = False
+        ออมมณี.Checked = False
+        รวยโชค.Checked = False
+        ออมทรัพย์.Checked = False
+        เล็บครุฑด่าง.Checked = False
+        เพชรชมพู.Checked = False
+
+        Standard.Checked = False
+        Plastic1.Checked = False
+        Plastic2.Checked = False
+        Ceramic1.Checked = False
+        Ceramic2.Checked = False
+        Ceramic3.Checked = False
+        Ceramic4.Checked = False
+
+        MiscellaneousPic.Image = Nothing
+        PlantPic.Image = Nothing
+        PotPic.Image = Nothing
+
+        ดินปลูก.Checked = False
+        หินขาว.Checked = False
+        หินเกล็ดชมพู.Checked = False
+        หินเกล็ดดำ.Checked = False
+        ปุ๋ยบำรุงต้น.Checked = False
+        ป้ายชื่อต้นไม้.Checked = False
+        ตะกร้าใส่ปุ๋ย.Checked = False
+
+        sum = 0
+
+        Quantities = 1
+        QuantityValue.Text = Quantities
+
+        TotalValue.Text = "฿" & (sum * Quantities)
+
+        PurchaseProduct.Text = ""
+
+    End Sub
 End Class

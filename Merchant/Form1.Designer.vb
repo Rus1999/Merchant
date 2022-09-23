@@ -83,6 +83,7 @@ Partial Class Form1
         Me.PlusBtn = New System.Windows.Forms.Button()
         Me.CheckoutBtn = New System.Windows.Forms.Button()
         Me.Product = New System.Windows.Forms.GroupBox()
+        Me.ClearBtn = New System.Windows.Forms.Button()
         Me.Bill = New System.Windows.Forms.GroupBox()
         Me.PurchaseProduct = New System.Windows.Forms.Label()
         Me.TotalValue = New System.Windows.Forms.Label()
@@ -671,7 +672,7 @@ Partial Class Form1
         'QuantityLabel
         '
         Me.QuantityLabel.AutoSize = True
-        Me.QuantityLabel.Location = New System.Drawing.Point(465, 460)
+        Me.QuantityLabel.Location = New System.Drawing.Point(404, 460)
         Me.QuantityLabel.Name = "QuantityLabel"
         Me.QuantityLabel.Size = New System.Drawing.Size(65, 20)
         Me.QuantityLabel.TabIndex = 5
@@ -679,7 +680,7 @@ Partial Class Form1
         '
         'QuantityValue
         '
-        Me.QuantityValue.Location = New System.Drawing.Point(577, 460)
+        Me.QuantityValue.Location = New System.Drawing.Point(516, 460)
         Me.QuantityValue.Name = "QuantityValue"
         Me.QuantityValue.Size = New System.Drawing.Size(66, 25)
         Me.QuantityValue.TabIndex = 6
@@ -689,7 +690,7 @@ Partial Class Form1
         'SubBtn
         '
         Me.SubBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.SubBtn.Location = New System.Drawing.Point(546, 456)
+        Me.SubBtn.Location = New System.Drawing.Point(485, 456)
         Me.SubBtn.Name = "SubBtn"
         Me.SubBtn.Size = New System.Drawing.Size(35, 29)
         Me.SubBtn.TabIndex = 7
@@ -699,7 +700,7 @@ Partial Class Form1
         'PlusBtn
         '
         Me.PlusBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.PlusBtn.Location = New System.Drawing.Point(632, 456)
+        Me.PlusBtn.Location = New System.Drawing.Point(571, 456)
         Me.PlusBtn.Name = "PlusBtn"
         Me.PlusBtn.Size = New System.Drawing.Size(38, 29)
         Me.PlusBtn.TabIndex = 8
@@ -709,7 +710,7 @@ Partial Class Form1
         'CheckoutBtn
         '
         Me.CheckoutBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.CheckoutBtn.Location = New System.Drawing.Point(702, 458)
+        Me.CheckoutBtn.Location = New System.Drawing.Point(717, 456)
         Me.CheckoutBtn.Name = "CheckoutBtn"
         Me.CheckoutBtn.Size = New System.Drawing.Size(94, 29)
         Me.CheckoutBtn.TabIndex = 9
@@ -719,6 +720,7 @@ Partial Class Form1
         'Product
         '
         Me.Product.BackColor = System.Drawing.Color.LightCoral
+        Me.Product.Controls.Add(Me.ClearBtn)
         Me.Product.Controls.Add(Me.PotPic)
         Me.Product.Controls.Add(Me.CheckoutBtn)
         Me.Product.Controls.Add(Me.PlantType)
@@ -738,6 +740,16 @@ Partial Class Form1
         Me.Product.TabStop = False
         Me.Product.Text = "Product"
         '
+        'ClearBtn
+        '
+        Me.ClearBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.ClearBtn.Location = New System.Drawing.Point(617, 456)
+        Me.ClearBtn.Name = "ClearBtn"
+        Me.ClearBtn.Size = New System.Drawing.Size(94, 29)
+        Me.ClearBtn.TabIndex = 10
+        Me.ClearBtn.Text = "Clear"
+        Me.ClearBtn.UseVisualStyleBackColor = True
+        '
         'Bill
         '
         Me.Bill.Controls.Add(Me.PurchaseProduct)
@@ -756,7 +768,6 @@ Partial Class Form1
         Me.PurchaseProduct.Name = "PurchaseProduct"
         Me.PurchaseProduct.Size = New System.Drawing.Size(638, 25)
         Me.PurchaseProduct.TabIndex = 15
-        Me.PurchaseProduct.Text = "Purchase Product"
         '
         'TotalValue
         '
@@ -784,7 +795,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Product)
         Me.Controls.Add(Me.Bill)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "WOWZAA!!!"
         Me.PlantType.ResumeLayout(False)
         Me.PlantType.PerformLayout()
         Me.PotType.ResumeLayout(False)
@@ -866,4 +877,5 @@ Partial Class Form1
     Friend WithEvents หินขาวLabel As Label
     Friend WithEvents ดินปลูกLabel As Label
     Friend WithEvents PurchaseProduct As Label
+    Friend WithEvents ClearBtn As Button
 End Class
