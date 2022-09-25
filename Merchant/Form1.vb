@@ -89,7 +89,6 @@ Public Class Form1
     Private Sub Ceramic4_CheckedChanged(sender As Object, e As EventArgs) Handles Ceramic4.CheckedChanged
         If Ceramic4.Checked Then
             PotPic.Image = (My.Resources.ceramic4)
-
         End If
     End Sub
 
